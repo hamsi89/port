@@ -15,26 +15,34 @@
 <body>
     <div class="header">
         <div class="inner">
-            <div class="header-title">
+            <div class="header-title box">
                 <p>DEVELOPER HAM'S</p>
             </div><!-- heaeder-title -->
-            <div class="header-text">
+            <div class="header-text box">
                 <p>Creative, humorous, and enthusiastic.</p>
             </div><!-- header-text -->
             <div class="header-right">
                 <div class="header-mode">
-                    <div class="slide">
+                    <div class="slide box">
                         <div class="mode-btn">
                             <img src="img/mode-btn.svg" alt="다크모드전환버튼">
                         </div><!-- mode-btn -->
                     </div><!-- slide -->
                 </div><!-- header-mode -->
-                <div class="menu-btn">
+                <div class="menu-btn box">
                     <img src="img/Menu.svg" alt="메뉴버튼">
                 </div>
             </div>
         </div><!-- inner -->
     </div><!-- header -->
+    <div class="bg-line-wrap">
+
+        <div class="bg-line"></div>
+        <div class="bg-line"></div>
+        <div class="bg-line"></div>
+        <div class="bg-line"></div>
+
+    </div>
     <div class="human">
         <svg class="nomal-human" width="844" height="987" viewBox="0 0 844 987" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -156,8 +164,8 @@
                 <path
                     d="M493.441 264.687C492.155 264.903 490.981 264.504 490.094 263.349C489.935 263.143 489.725 262.977 489.542 262.791C487.901 261.124 487.556 259.255 488.458 257.096C489.171 255.389 490.356 253.972 491.331 252.428C493.023 249.748 495.258 247.566 497.779 245.652C499.302 244.496 500.588 243.07 502.134 241.913C505.555 239.354 509.105 237.006 512.757 234.799C512.831 234.755 512.92 234.733 512.99 234.683C514.153 233.833 515.672 233.921 516.878 233.217C517.998 232.563 519.058 231.81 520.149 231.106C520.295 231.012 520.458 230.902 520.622 230.887C522.401 230.733 523.8 229.625 525.393 229.007C526.204 228.692 527.007 228.328 527.846 228.111C530.452 227.442 533.09 226.891 535.681 226.173C536.95 225.821 538.295 226.045 539.529 225.502C539.793 225.387 540.215 225.544 540.532 225.661C541.224 225.916 541.869 225.78 542.573 225.657C544.793 225.271 546.995 224.718 549.283 224.848C550.325 224.907 551.343 224.773 552.383 224.513C553.731 224.176 555.165 224.167 556.53 224.539C557.314 224.752 558.037 224.895 558.821 224.586C559.854 224.178 560.873 224.278 561.854 224.798C562.485 225.134 563.109 225.345 563.845 225.022C564.129 224.898 564.54 224.95 564.86 225.039C566.535 225.507 568.213 225.97 569.861 226.524C570.682 226.801 571.473 227.208 572.214 227.661C575.097 229.425 575.152 232.288 573.783 234.691C572.513 236.92 570.637 238.66 568.703 240.283C567.11 241.62 565.333 242.745 563.587 243.887C560.923 245.626 557.894 246.521 554.871 247.344C552.277 248.049 549.62 248.38 546.906 248.545C544.567 248.686 542.281 249.149 539.951 248.486C539.475 248.351 538.896 248.444 538.394 248.559C535.544 249.213 532.707 249.203 529.862 248.538C529.444 248.44 528.993 248.453 528.558 248.461C524.882 248.529 521.303 247.85 517.737 247.07C516.126 246.718 514.522 246.334 512.909 245.994C512.401 245.888 511.874 245.845 511.355 245.838C509.712 245.816 509.099 246.256 508.643 247.722C508.189 249.183 508.572 250.204 509.997 251.015C510.981 251.576 512.026 252.031 513.049 252.524C513.204 252.598 513.382 252.625 513.551 252.668C514.203 252.832 514.665 253.199 514.722 253.898C514.77 254.487 514.39 254.858 513.935 255.162C512.414 256.178 510.93 257.255 509.364 258.195C507.497 259.314 505.555 260.31 503.652 261.366C501.351 262.644 498.881 263.487 496.385 264.287C495.449 264.588 494.53 264.741 493.438 264.689L493.441 264.687Z"
                     fill="#333333" />
-                <circle cx="563" cy="347" r="19" fill="#333333" />
-                <circle cx="730" cy="347" r="19" fill="#333333" />
+                <circle id="left-eye" cx="563" cy="347" r="19" fill="#333333" />
+                <circle id="right-eye" cx="730" cy="347" r="19" fill="#333333" />
             </g>
             <defs>
                 <clipPath id="clip0_197_596">
@@ -319,21 +327,28 @@
 
 
     </div>
+
+
     <section class="hero-section">
         <div class="inner">
             <div class="inner-title">
                 <h2>PORTFOLIO</h2>
-                <span>I'm </span><span>not a slow start;</span>
+                <div class="sub-title">
+                    <span>I'm </span><span>not a slow start;</span>
+                </div>
             </div><!-- inner-title -->
         </div><!-- inner -->
     </section><!-- hero-section -->
 
     <div class="line-wrap inner">
+
         <div class="line line-01"></div>
         <div class="line line-02"></div>
         <div class="line line-03"></div>
         <div class="line line-04"></div>
+
     </div>
+
     <section class="project-section">
         <div class="inner">
             <div class="section-title">
@@ -358,29 +373,30 @@
                         </div>
                     </div><!-- project-title -->
                     <div class="project-screen">
-                        <div class="image">
-                            <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
-                        </div><!-- image -->
-                        <div class="btn-wrap">
-                            <div class="btn design-btn">
-                                <a href="#">DESIGN +</a>
-                            </div><!-- btn -->
-
-                            <div class="btn style-btn">
-                                <a href="#">STYLE GUIDE +</a>
-                            </div><!-- btn -->
-                            <div class="btn time-btn">
-                                <a href="#">TIMELAPS +</a>
-                            </div><!-- btn -->
-                        </div><!-- btn-wrap -->
-
-                        <div class="project-info">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
-                                sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
-                                fuga vel. Iusto aperiam non voluptatum consectetur!</span>
-                        </div><!-- project-info -->
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
                     </div><!-- project-screen -->
                 </div><!-- project -->
+                
                 <div class="project">
                     <div class="project-title">
                         <div class="project-name">
@@ -399,29 +415,30 @@
                         </div>
                     </div><!-- project-title -->
                     <div class="project-screen">
-                        <div class="image">
-                            <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
-                        </div><!-- image -->
-                        <div class="btn-wrap">
-                            <div class="btn design-btn">
-                                <a href="#">DESIGN +</a>
-                            </div><!-- btn -->
-
-                            <div class="btn style-btn">
-                                <a href="#">STYLE GUIDE +</a>
-                            </div><!-- btn -->
-                            <div class="btn time-btn">
-                                <a href="#">TIMELAPS +</a>
-                            </div><!-- btn -->
-                        </div><!-- btn-wrap -->
-
-                        <div class="project-info">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
-                                sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
-                                fuga vel. Iusto aperiam non voluptatum consectetur!</span>
-                        </div><!-- project-info -->
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
                     </div><!-- project-screen -->
                 </div><!-- project -->
+                
                 <div class="project">
                     <div class="project-title">
                         <div class="project-name">
@@ -440,29 +457,30 @@
                         </div>
                     </div><!-- project-title -->
                     <div class="project-screen">
-                        <div class="image">
-                            <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
-                        </div><!-- image -->
-                        <div class="btn-wrap">
-                            <div class="btn design-btn">
-                                <a href="#">DESIGN +</a>
-                            </div><!-- btn -->
-
-                            <div class="btn style-btn">
-                                <a href="#">STYLE GUIDE +</a>
-                            </div><!-- btn -->
-                            <div class="btn time-btn">
-                                <a href="#">TIMELAPS +</a>
-                            </div><!-- btn -->
-                        </div><!-- btn-wrap -->
-
-                        <div class="project-info">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
-                                sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
-                                fuga vel. Iusto aperiam non voluptatum consectetur!</span>
-                        </div><!-- project-info -->
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
                     </div><!-- project-screen -->
                 </div><!-- project -->
+                
                 <div class="project">
                     <div class="project-title">
                         <div class="project-name">
@@ -481,29 +499,30 @@
                         </div>
                     </div><!-- project-title -->
                     <div class="project-screen">
-                        <div class="image">
-                            <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
-                        </div><!-- image -->
-                        <div class="btn-wrap">
-                            <div class="btn design-btn">
-                                <a href="#">DESIGN +</a>
-                            </div><!-- btn -->
-
-                            <div class="btn style-btn">
-                                <a href="#">STYLE GUIDE +</a>
-                            </div><!-- btn -->
-                            <div class="btn time-btn">
-                                <a href="#">TIMELAPS +</a>
-                            </div><!-- btn -->
-                        </div><!-- btn-wrap -->
-
-                        <div class="project-info">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
-                                sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
-                                fuga vel. Iusto aperiam non voluptatum consectetur!</span>
-                        </div><!-- project-info -->
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
                     </div><!-- project-screen -->
                 </div><!-- project -->
+                
             </div><!-- project-wrap -->
         </div><!-- inner -->
     </section><!-- project-section -->
@@ -1003,149 +1022,221 @@
     </section>
 
     <section class="about-section">
-    
-                <div class="page page-02">
-                    <div class="section-title">
-                        <div class="main">
-                            <span>H</span>
-                            <span>A</span>
-                            <span>M</span>
-                            <span>S</span>
-                            <span>E</span>
-                            <span>U</span>
-                            <span>N</span>
-                            <span>G</span>
-                            <span>I</span>
-                            <span>L</span>
-                        </div>
-                        <div class="sub">
-                            <p>'편의성'과 '재미'를 추구하는 웹개발자를 지향합니다</p>
-                        </div>
-                    </div><!-- section-title -->
-                
-                  <div class="inner">
-                 
-                    <div class="item-wrap">
-                            <div class="left">
-                                <div class="item">
-                                    <p>생년월일</p>
-                                    <span>1989.06.08</span>
-                                </div>
-                                <div class="item">
-                                    <p>경력</p>
-                                    <span>더리터 슈퍼바이저</span>
-                                    <span>이디야 파고다점 운영</span>
-                                    <span>은솔 인테리어 영업 & 시공</span>
-                                    <span>프리랜서</span>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="item">
-                                    <p>교육과정</p>
-                                    <span>반응형 ui/ux 웹디자인&웹퍼블리셔 </span>
-                                        <span>양성 교육과정 이수</span>
-                                </div>
-                                <div class="item">
-                                    <p>생년월일</p>
-                                    <span>1989.06.08</span>
-                                </div>
-                            </div>
-                    </div>
-                  </div>
-    
+
+        <div class="page page-02">
+            <div class="section-title">
+                <div class="main">
+                    <span>H</span>
+                    <span>A</span>
+                    <span>M</span>
+                    <span>S</span>
+                    <span>E</span>
+                    <span>U</span>
+                    <span>N</span>
+                    <span>G</span>
+                    <span>I</span>
+                    <span>L</span>
                 </div>
-                <div class="page page-02">
-                    <div class="section-title">
-                        <div class="main">
-                            <span>What can I use?</span>
-                        </div>
-                        <div class="sub">
-                            <p></p>
-                        </div>
-                    </div><!-- section-title -->
-                  <div class="inner">
-                     <div class="icon-wrap">
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="img/icon/After Effects.svg" alt="">
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-    
+                <div class="sub">
+                    <p>'편의성'과 '재미'를 추구하는 웹개발자를 지향합니다</p>
                 </div>
-                <div class="page page-01">
-                    <div class="section-title">
-                      <!--   <span>W</span>
-                        <span>H</span>
-                        <span>O</span>
-                        <span>?</span> -->
-                    </div><!-- section-title -->
-                    <div class="inner">
-                   
+            </div><!-- section-title -->
+
+            <div class="inner">
+
+                <div class="item-wrap">
+                    <div class="left">
+                        <div class="item">
+                            <p>생년월일</p>
+                            <span>1989.06.08</span>
+                        </div>
+                        <div class="item">
+                            <p>경력</p>
+                            <span>더리터 슈퍼바이저</span>
+                            <span>이디야 파고다점 운영</span>
+                            <span>은솔 인테리어 영업 & 시공</span>
+                            <span>프리랜서</span>
+                        </div>
                     </div>
-                </div>
-                <div class="page page-01">
-                    <div class="section-title">
-                        <span>H</span>
-                        <span>A</span>
-                        <span>M</span>
-                        <span>S</span>
-                        <span>E</span>
-                        <span>U</span>
-                        <span>N</span>
-                        <span>G</span>
-                        <span>I</span>
-                        <span>L</span>
-                    </div><!-- section-title -->
-                    <div class="inner">
-                        
-                        <div class="item birth">
-                            <p>언제 태어났습니까?</p>
-                            <p>1989.06.08</p>
+                    <div class="right">
+                        <div class="item">
+                            <p>교육과정</p>
+                            <span>반응형 ui/ux 웹디자인&웹퍼블리셔 </span>
+                            <span>양성 교육과정 이수</span>
+                        </div>
+                        <div class="item">
+                            <p>생년월일</p>
+                            <span>1989.06.08</span>
                         </div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+        <div class="page page-02">
+            <div class="section-title">
+                <div class="main">
+                    <span>What can I use?</span>
+                </div>
+                <div class="sub">
+                    <p></p>
+                </div>
+            </div><!-- section-title -->
+            <div class="inner">
+                <div class="icon-wrap">
+                    <div class="icon">
+                        <img src="img/icon/JavaScript.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/css.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/html.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/After Effects.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/Photoshop.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/Illustrator.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/Lightroom.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icon/Figma.svg" alt="">
+                    </div>
+
+                    <div class="icon">
+                        <img src="img/icon/Blender.svg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
     </section>
 
     <footer class="footer">
+        <div class="inner">
+            <div class="contact">
+                <div class="title">
+                    <p>CONTACT</p>
+                </div>
 
+                <div class="num-mail">
+                    <div class="num">
+                        <p>Number:</p>
+                        <span>010 - 4877 - 2454</span>
+                    </div>
+                    <div class="mail">
+                        <P>e-Mail:</P>
+                        <span>hamsi8989@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="sns-wrap">
+                    <img src="img/icon/Discord.svg" alt="">
+                    <img src="img/icon/X.svg" alt="">
+                    <img src="img/icon/GitHub.svg" alt="">
+                    <img src="img/icon/YouTube.svg" alt="">
+                </div>
+                <div class="big-text">
+                    <p>HAM SEUNG IL</p>
+                </div>
+                <div class="copy">
+                    <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+                        © 2025 함승일. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
 
 <script>
-    const shadows = document.querySelectorAll(".inner-title .shadow");
+        gsap.fromTo(
+      ".box",
+      {
+        y: -200, 
 
-    shadows.forEach((element, index) => {
-        const offset = index + 1; // 첫 번째 shadow는 1px, 두 번째는 2px ...
-        gsap.set(element, {
-            textShadow: `${offset}px ${offset}px 0px rgba(0, 0, 0, 0.5)`,
-        });
-    });
+      },
+      {
+        y: 0, 
+        duration: 1, // 각 애니메이션의 지속시간
+        stagger: 0.2, // 순차적 시작 (0.2초 간격)
+        ease: "bounce.out", // 흔들리는 효과
+      }
+    );
+
+    gsap.fromTo(".line",
+    {
+        width:"0%",
+    },{
+        width:"100%",
+        duration: 1, // 각 애니메이션의 지속시간
+        stagger: 0.2,
+
+        scrollTrigger:{
+            trigger: ".line-wrap",
+            start: "top 60%",
+            end: "bottom bottom",
+           
+        }
+    })
+
+    gsap.from(".project-section", {
+        y:"100%",
+        duration: 1,
+        
+        scrollTrigger:{
+            trigger: ".line-wrap",
+            start: "top 60%",
+            end: "bottom bottom",
+         
+       
+        }
+
+
+    })
+    const projects = document.querySelectorAll(".project");
+
+projects.forEach((project, index) => {
+  ScrollTrigger.create({
+    trigger: project,
+    start: "top top", // 프로젝트 섹션의 top이 뷰포트 top에 닿을 때
+    end: () => "+=" + window.innerHeight, // 프로젝트 섹션 높이 만큼 지속
+    pin: true, // 화면 고정
+    scrub: true, // 애니메이션을 스크롤에 따라 움직이게 설정
+    onEnter: () => {
+      gsap.fromTo(
+        project,
+        { scale: 0 },
+        { scale: 1, duration: 1, ease: "power2.out" }
+      );
+    },
+    onLeave: () => {
+      gsap.to(project, { scale: 0, duration: 1, ease: "power2.in" });
+    },
+    onEnterBack: () => {
+      gsap.fromTo(
+        project,
+        { scale: 0 },
+        { scale: 1, duration: 1, ease: "power2.out" }
+      );
+    },
+    onLeaveBack: () => {
+      gsap.to(project, { scale: 0, duration: 1, ease: "power2.in" });
+    },
+  });
+});
+
 
     gsap.to(".move-bar", {
         x: "40px",
@@ -1243,7 +1334,7 @@
         y: "0%",
         zIndex: 10,
         scale: 0.7,
-    
+
         scrollTrigger: {
             trigger: aboutSection,
             start: "top 80%",
@@ -1253,10 +1344,39 @@
 
     })
 
+    gsap.to(".human", {
+
+        y: "100%",
+
+        scrollTrigger: {
+            trigger: ".footer",
+            start: "top bottom",
+            end: "top top",
+            scrub: true,
+        },
+
+    })
+    const jelloHorizontal = () => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".footer", // 트리거 요소
+                start: "top 80%",   // 트리거 시작 위치
+                toggleActions: "play none none none", // 애니메이션 재생 설정
+            },
+        })
+            .to(".footer", { scaleX: 1.25, scaleY: 0.75, duration: 0.2, ease: "power1.inOut" })
+            .to(".footer", { scaleX: 0.75, scaleY: 1.25, duration: 0.2, ease: "power1.inOut" })
+            .to(".footer", { scaleX: 1.15, scaleY: 0.85, duration: 0.2, ease: "power1.inOut" })
+            .to(".footer", { scaleX: 0.95, scaleY: 1.05, duration: 0.15, ease: "power1.inOut" })
+            .to(".footer", { scaleX: 1.05, scaleY: 0.95, duration: 0.15, ease: "power1.inOut" })
+            .to(".footer", { scaleX: 1, scaleY: 1, duration: 0.2, ease: "power1.inOut" });
+    };
+
+    jelloHorizontal();
     const normalHuman = document.querySelector(".nomal-human");
     const superHuman = document.querySelector(".super-human");
 
-    /*
+
     gsap.to(".human", {
       scrollTrigger: {
         trigger: ".about-section", // 기준이 되는 요소
@@ -1281,10 +1401,10 @@
           normalHuman.style.display = "block";
           superHuman.style.display = "none";
         },
-        markers: true, // 디버깅용 마커 표시
+       
       },
     });
-    */
+  
 
 
 </script>

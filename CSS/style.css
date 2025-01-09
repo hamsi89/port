@@ -28,13 +28,13 @@
 
 @font-face {
     font-family: "pre-nomal";
-    src: url(../CSS/assets/font/MontserratAlternates-Regular.ttf.ttf);
+    src: url(../CSS/assets/font/MontserratAlternates-Regular.ttf);
 }
 
 
 *{
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
     font-family: "mont";
     box-sizing: border-box;
     font-size: 62.5%;
@@ -54,7 +54,7 @@ li{
     --black-color : #333333;
     --white-color : #F8F8F8;
     --bg-white-color : #F5F5F5;
-
+    --gray-color : #f8f8f871;
 }
 
 body{
@@ -68,6 +68,23 @@ body{
     max-width: 1080px;
     width: calc(100% - 40px);
     margin: 0 auto;
+}
+
+.bg-line-wrap{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding:0 15rem;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-line-wrap .bg-line{
+    width: 1px;
+    height: 100%;
+    border: 1px #3333335b dotted;
 }
 
 .human{
@@ -169,15 +186,27 @@ body{
 }
 .hero-section .inner .inner-title h2{
     text-align: center;
-    font-size: 18rem;
+    font-size: 15rem;
+    text-shadow: 
+    2px 2px 0px #2980b9,   /* 첫 번째 그림자 */
+    4px 4px 0px #1c5980,   /* 두 번째 그림자 */
+    6px 6px 5px rgba(0, 0, 0, 0.3); /* 세 번째 그림자 */
+    color: var(--white-color);
+    -webkit-text-stroke: 2px var(--black-color);
+}
+.hero-section .inner .inner-title .sub-title{
+    text-align: right;
+    margin-right: 2rem;
 }
 
 .hero-section .inner .inner-title span{
-font-size: 6rem;
-font-weight: 800;
+    width: 100%;
+    text-align: right;
+    font-size: 6rem;
+    font-weight: 800;
 }
 
-.hero-section .inner .inner-title span:nth-child(3){
+.hero-section .inner .inner-title .sub-title span:nth-child(2){
     text-decoration: underline;
     
 }
@@ -194,6 +223,7 @@ font-weight: 800;
 .line-wrap .line{
     width: 100%;
     background-color: var(--black-color);
+
 }
 
 .line-wrap .line-01{width: 100%; height: 1px;}
@@ -202,6 +232,7 @@ font-weight: 800;
 .line-wrap .line-04{width: 100%; height: 8px;}
 
 .project-section{
+    padding: 3rem 0;
     padding-bottom: 17rem;
 }
 
@@ -257,16 +288,22 @@ font-weight: 800;
     border-radius: 2rem;
 }
 
-.project-section .project-screen {
-    padding: 0 2rem;
+.project-section .project-wrap .project{    
+
+}
+
+.project-section .project-screen{
+    overflow: hidden;
+    height: 0;
 }
 
 .project-section .project-screen .image{
     width: 100%;
+    text-align: center;
     padding: 2rem 0;
 }
 .project-section .project-screen .image img{
-    width: 100%;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -464,15 +501,11 @@ font-weight: 800;
     font-family: "pre";
 }
 
-.about-section .page{
-    width: 100vw;
-}
-
 .about-section .inner{
     max-width: 1440px;
     width: calc(100% - 40px);
-    height: 100vh;
     position: relative;
+    height: 100vh;
 }
 
 
@@ -506,8 +539,61 @@ font-weight: 800;
 }
 
 .about-section .icon-wrap{
-    width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    gap: 2rem;
     display: flex;
+    justify-content: center;
+}
+.about-section .icon-wrap .icon {
+    position: relative;
+    transform-origin: center;
+  }
+  .footer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 
+.footer .inner{
+    background-color: #333333;
+    font-family: "mont";
+    font-weight: 900;
+    padding: 10rem;
 }
 
+.footer .inner .contact .title p{
+    font-size: 4rem;
+    color: var(--white-color);
+    margin-bottom: 2.5rem;
+}
+
+.footer .inner .contact .num-mail{
+    display: flex;
+    gap: 10%;
+    margin-bottom: 4rem;
+}
+.footer .inner .contact .num-mail p{
+    font-size: 2rem;
+    color: var(--gray-color)
+}
+.footer .inner .contact .num-mail span{
+    display: block;
+    font-size: 3rem;
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.footer .inner .big-text p{
+    font-size: 10rem;
+    color: var(--white-color);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer .inner .copy p{
+    text-align: center;
+    font-family: "pre-nomal";
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
