@@ -249,6 +249,12 @@ body{
     padding: 0 2rem;
 }
 
+.project-section .project-wrap .project{    
+    position: relative;
+    max-width: 1080px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
 
 .project-section .inner .project-wrap .project .project-title{
     display: flex;
@@ -275,22 +281,6 @@ body{
     font-weight: 800;
 }
 
-.project-section .project-position{
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-.project-section .ex-btn a{
-    padding: 1rem 3rem;
-    background-color: var(--black-color);
-    display: flex;
-    align-items: center;
-    border-radius: 2rem;
-}
-
-.project-section .project-wrap .project{    
-
-}
 
 .project-section .project-screen{
     overflow: hidden;
@@ -307,12 +297,25 @@ body{
     object-fit: cover;
 }
 
+.project-section .project-position{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.project-section .ex-btn a{
+    padding: 1rem 3rem;
+    background-color: var(--black-color);
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+
 .project-section .btn-wrap{
     display: flex;
     gap: 1rem;
     padding: 2rem 0;
 }
-
 
 
 .project-section .btn-wrap .btn a{
