@@ -355,7 +355,49 @@
                 <h3>mY PROJECT</h3>
             </div><!-- section-title -->
             <div class="project-wrap">
-                <div class="project">
+                <div class="project " style="z-index: -4;">
+                    <div class="project-title">
+                        <div class="project-name">
+                            <div class="project-logo">
+                                <img src="img/nike-logo.svg" alt="신발 모양 아이콘">
+                            </div>
+                            <div>
+                                <p>NIKE</p>
+                            </div><!-- project-name -->
+                        </div>
+                        <div class="project-position">
+                            <p>DESIGN & PUBLISHING</p>
+                        </div><!-- project-postion -->
+                        <div class="ex-btn">
+                            <a href="#"><img src="img/+.svg" alt="사이트 바로가기 버튼"></a>
+                        </div>
+                    </div><!-- project-title -->
+                    <div class="project-screen first">
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
+                    </div><!-- project-screen -->
+                </div><!-- project -->
+                
+                <div class="project" style="z-index: -3;">
                     <div class="project-title">
                         <div class="project-name">
                             <div class="project-logo">
@@ -396,8 +438,48 @@
                         
                     </div><!-- project-screen -->
                 </div><!-- project -->
-                
-                <div class="project">
+                <div class="project" style="z-index: -2;">
+                    <div class="project-title">
+                        <div class="project-name">
+                            <div class="project-logo">
+                                <img src="img/nike-logo.svg" alt="신발 모양 아이콘">
+                            </div>
+                            <div>
+                                <p>NIKE</p>
+                            </div><!-- project-name -->
+                        </div>
+                        <div class="project-position">
+                            <p>DESIGN & PUBLISHING</p>
+                        </div><!-- project-postion -->
+                        <div class="ex-btn">
+                            <a href="#"><img src="img/+.svg" alt="사이트 바로가기 버튼"></a>
+                        </div>
+                    </div><!-- project-title -->
+                    <div class="project-screen">
+                       
+                            <div class="image">
+                                <img src="img/nike-site.svg" alt="나이키 사이트 이미지">
+                            </div><!-- image -->
+                            <div class="btn-wrap">
+                                <div class="btn design-btn">
+                                    <a href="#">DESIGN +</a>
+                                </div><!-- btn -->
+                                <div class="btn style-btn">
+                                    <a href="#">STYLE GUIDE +</a>
+                                </div><!-- btn -->
+                                <div class="btn time-btn">
+                                    <a href="#">TIMELAPS +</a>
+                                </div><!-- btn -->
+                            </div><!-- btn-wrap -->
+                            <div class="project-info">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem corrupti sed,
+                                    sequi esse inventore quasi, laboriosam reprehenderit, quae pariatur officiis amet vero
+                                    fuga vel. Iusto aperiam non voluptatum consectetur!</span>
+                            </div><!-- project-info -->
+                        
+                    </div><!-- project-screen -->
+                </div><!-- project -->
+                <div class="project" style="z-index: -1;">
                     <div class="project-title">
                         <div class="project-name">
                             <div class="project-logo">
@@ -445,12 +527,11 @@
     </section><!-- project-section -->
 
     <section class="video-section">
-        <div class="inner">
-            <div class="section-title">
-                <h3>VIDEOS</h3>
                 <div class="flim-icon">
-                    <img src="img/flim.svg" alt="돌아가는 필름">
-                </div>
+                    <img src="img/flim.png" alt="돌아가는 필름">
+                 </div>
+        <div class="inner">
+           
             </div><!-- section-title -->
             <div class="video-wrap">
                 <div class="video">
@@ -527,6 +608,10 @@
     </section><!-- video-section -->
 
     <section class="skill-section">
+        <div class="section-title">
+       
+            <p>SKILL</p>
+        </div>
         <div class="skill-wrap">
             <div class="skill skill-01">
                 <div class="skill-title">
@@ -1108,22 +1193,6 @@
         }
     })
 
-    gsap.from(".project-section", {
-        y:"100%",
-        duration: 1,
-        
-        scrollTrigger:{
-            trigger: ".line-wrap",
-            start: "top 60%",
-            end: "bottom bottom",
-         
-       
-        }
-
-
-    })
-
-
 
     gsap.to(".move-bar", {
         x: "40px",
@@ -1166,6 +1235,39 @@
         duration: 1,
     });
 
+    const projectAnimation = gsap.timeline();
+
+// 각 프로젝트 애니메이션 설정
+const projects = document.querySelectorAll(".project");
+projects.forEach((project, index) => {
+  projectAnimation
+    .from(project, {
+      y: 400, // 아래에서 위로 이동
+      autoAlpha: 0, // 투명도 애니메이션
+      duration: 1, // 애니메이션 지속 시간
+      ease: "power2.out", // 부드러운 애니메이션
+    });
+});
+
+// ScrollTrigger 생성
+ScrollTrigger.create({
+  animation: projectAnimation,
+  trigger: ".project-section",
+  start: "top top", // 섹션이 뷰포트 상단에 닿으면 시작
+  end: "+=2000", // 전체 애니메이션 지속 길이
+  scrub: true, // 스크롤과 동기화
+  pin: true, // 섹션 고정
+  anticipatePin: 1, // 핀 동작 예측
+  markers: false, // 디버그 마커 숨김
+});
+
+
+gsap.to(".flim-icon img",{
+    rotate:360,
+    repeat : -1,
+    duration:30,
+})
+
     const skillSection = document.querySelector(".skill-section");
     const icon01 = skillSection.querySelector(".icon-01")
     const icon02 = skillSection.querySelector(".icon-02")
@@ -1191,12 +1293,12 @@
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: skillSection,
-            start: "top 50%",
+            start: "top top",
             end: "+=2000",
             scrub: true,
             anticipatePin: 1,
             pin: true,
-
+            markers:true,
         },
     });
 
@@ -1210,6 +1312,7 @@
     tl.from(".skill-03", {
         x: "100%",
     });
+
 
     const aboutSection = document.querySelector(".about-section")
 
@@ -1241,8 +1344,10 @@
             end: "top top",
             scrub: true,
         },
-
     })
+
+
+
     const jelloHorizontal = () => {
         gsap.timeline({
             scrollTrigger: {
