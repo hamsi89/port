@@ -67,6 +67,8 @@
     }
 }
 
+
+
 * {
     padding: 0;
     margin: 0;
@@ -93,6 +95,14 @@ li {
     --pointOrenge-color: #ff9f67;
 }
 
+.dark-mode {
+    --black-color: #f8f8f8;
+    --white-color: #333333;
+    --bg-white-color: #1f1f1f;
+    --gray-color: #333333;
+    --pointOrenge-color: #ff9f67;
+}
+
 body {
     background-color: var(--bg-white-color);
     color: var(--black-color);
@@ -107,13 +117,21 @@ body {
     margin: 0 auto;
 }
 
-.bg-line-wrap {
+.bg {
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    padding: 0 15rem;
+    opacity: 50%;
     z-index: -1;
+}
+
+.bg-line-wrap {
+
+    max-width: 80vw;
+    width: calc(100% - 40px);
+    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
@@ -121,17 +139,21 @@ body {
 .bg-line-wrap .bg-line {
     width: 1px;
     height: 100%;
-    border: 1px #3333335b dotted;
+    border: 1px var(--black-color) dotted;
 }
 
 .human {
     position: fixed;
     z-index: 1;
-    left: -13%;
+    left: 50%;
+    top : 15%;
+    transform: translateX(-50%);
+    min-width: 844px
 }
 
 .human svg {
     width: 80%;
+   
 }
 
 .human .nomal-human {
@@ -153,14 +175,14 @@ body {
 .pupil {
     width: 30px;
     height: 30px;
-    background-color: var(--black-color);
+    background-color: #333333;
     border-radius: 50%;
 
 }
 
 .header {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .header .inner {
@@ -194,7 +216,6 @@ body {
 }
 
 .header .header-mode {
-    border: 1px solid #333333;
     padding: 1rem 2rem;
 
 }
@@ -216,11 +237,18 @@ body {
     transform: translate(-50%, -50%);
 
 }
+.header .header-mode.dark-mode .mode-btn {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(60%, -50%);
+
+}
 
 .header .menu-btn {
     height: 4rem;
     text-align: center;
-    border: 1px solid #333333;
+
 }
 
 .menu-bar {
@@ -340,31 +368,43 @@ body {
 
 .hero-section .inner {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 80vh;
     position: relative;
-    border: 1px solid var(--black-color);
+}
+
+.svg-text {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: var(--black-color);
+}
+
+.svg-text text {
+    stroke-dasharray: 950;
+    /* Adjust based on text length */
+    stroke-dashoffset: 950;
+    opacity: 0;
 }
 
 .hero-section .inner .inner-title {
     width: 100%;
     font-weight: 900;
-
+    display: flex;
+    left: 0;
 }
+
 
 .hero-section .inner .inner-title h2 {
     text-align: center;
-    font-size: 15rem;
-    text-shadow:
-        2px 2px 0px #2980b9,
-        /* 첫 번째 그림자 */
-        4px 4px 0px #1c5980,
-        /* 두 번째 그림자 */
-        6px 6px 5px rgba(0, 0, 0, 0.3);
-    /* 세 번째 그림자 */
-    color: var(--white-color);
-    -webkit-text-stroke: 2px var(--black-color);
+    font-size: 30rem;
+    color: var(--pointOrenge-color);
+    -webkit-text-stroke: 4px var(--black-color);
 }
 
 .hero-section .inner .inner-title .sub-title {
@@ -378,6 +418,32 @@ body {
     font-size: 6rem;
     font-weight: 800;
 }
+
+.hero-section .inner .menu-ellipse {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -7%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.hero-section .inner .menu-ellipse svg {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.hero-section .inner .ellipse text textPath {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.hero-section .inner .ellipse text textPath tspan {
+    fill: var(--black-color);
+}
+
+
 
 .hero-section .inner .inner-title .sub-title span:nth-child(2) {
     text-decoration: underline;
@@ -494,14 +560,14 @@ body {
     width: 100%;
     text-align: center;
     padding: 2rem 0;
-    
+
 }
 
-.project-section .project-screen .image img{
+.project-section .project-screen .image img {
     width: 90%;
     object-fit: cover;
     border: 1px solid var(--black-color);
-   
+
 }
 
 .project-section .project-position {
@@ -581,14 +647,14 @@ body {
     font-size: 1.8rem;
 }
 
-.project-section .project-info strong{
+.project-section .project-info strong {
     display: block;
     font-family: "pre";
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.project-section .project-info p{
+.project-section .project-info p {
     font-family: "pre-nomal";
     font-size: 1.8rem;
 }
@@ -598,7 +664,7 @@ body {
     font-size: 2rem;
     color: var(--white-color);
     position: relative;
-    background: linear-gradient(90deg,var(--black-color),var(--black-color)) no-repeat;
+    background: linear-gradient(90deg, var(--black-color), var(--black-color)) no-repeat;
     background-size: 0% 100%;
     background-color: var(--white-color);
     padding: 2rem;
@@ -609,13 +675,13 @@ body {
     transition: 0.5s;
 }
 
-.project-section .project-info .icon-wrap{
+.project-section .project-info .icon-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.project-section .project-info .icon-wrap img{
+.project-section .project-info .icon-wrap img {
     width: 15%;
 }
 
@@ -642,19 +708,6 @@ body {
     color: var(--white-color);
     font-size: 12rem;
     font-weight: 900;
-}
-
-.video-section .section-title .flim-icon {
-    width: 100%;
-    padding: 2rem;
-    text-align: center;
-    transform-origin: (50%, 50%)
-}
-
-
-.video-section .section-title .flim-icon img {
-    width: 50%;
-    object-fit: cover;
 }
 
 .video-section .video {
@@ -709,6 +762,7 @@ body {
     z-index: -10;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .video-section .bg-video video {
@@ -792,14 +846,14 @@ body {
 
 .image-section .inner .image-wrap .image .info h6 {
     width: 100%;
-    color: #ff9f67;
+    color: var(--pointOrenge-color);
     font-family: "pre";
     font-size: 8rem;
 }
 
 .image-section .inner .image-wrap .image .info p {
     width: 100%;
-    color: var(--white-color);
+    color: var(--white-color) !important;
     font-family: "pre";
     font-size: 3rem;
 }
@@ -990,7 +1044,7 @@ body {
 }
 
 .footer .inner {
-    background-color: #333333;
+    background-color: var(--black-color);
     font-family: "mont";
     font-weight: 900;
     padding: 10rem;

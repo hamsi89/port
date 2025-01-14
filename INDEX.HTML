@@ -19,9 +19,9 @@
             <div class="header-title box">
                 <p>DEVELOPER HAM'S</p>
             </div><!-- heaeder-title -->
-            <div class="header-text box">
+<!--             <div class="header-text box">
                 <p>Creative, humorous, and enthusiastic.</p>
-            </div><!-- header-text -->
+            </div> -->
             <div class="header-right">
                 <div class="header-mode">
                     <div class="slide box">
@@ -30,17 +30,18 @@
                         </div><!-- mode-btn -->
                     </div><!-- slide -->
                 </div><!-- header-mode -->
-             
+
             </div>
         </div><!-- inner -->
     </div><!-- header -->
-    <div class="bg-line-wrap">
-
-        <div class="bg-line"></div>
-        <div class="bg-line"></div>
-        <div class="bg-line"></div>
-        <div class="bg-line"></div>
-
+    <div class="bg">
+        <div class="bg-line-wrap">
+            <div class="bg-line"></div>
+            <div class="bg-line"></div>
+            <div class="bg-line"></div>
+            <div class="bg-line"></div>
+ 
+        </div>
     </div>
 
     <div class="menu-bar">
@@ -137,12 +138,34 @@
 
     <section class="hero-section">
         <div class="inner">
+            <div class="menu-ellipse">
+                <svg class="ellipse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+                    <!-- Define an ellipse -->
+                    <ellipse cx="500" cy="250" rx="400" ry="200" fill="none" stroke="#3e3e3e" stroke-width="0" />
+                
+                    <!-- Define a path (ellipse as path) -->
+                    <path id="ellipse-path" d="M 500,250 m -400,0 a 400,200 0 1,1 800,0 a 400,200 0 1,1 -800,0" fill="none" />
+                
+                    <!-- Text on the path -->
+                    <text>
+                        <textPath class="menupath" href="#ellipse-path" startOffset="-15%" text-anchor="middle" dominant-baseline="middle" font-size="20" letter-spacing="5">
+                            <tspan >WORK</tspan>
+                            <tspan dx="5">·</tspan>
+                            <tspan >SKILL </tspan>
+                            <tspan dx="5">·</tspan>
+                            <tspan >ABOUT </tspan>
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
             <div class="inner-title">
-                <h2>PORTFOLIO</h2>
-                <div class="sub-title">
-                    <span>I'm </span><span>not a slow start;</span>
-                </div>
-            </div><!-- inner-title -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 600" class="svg-text" width="100vw" height="auto">
+                    <text x="50%" y="100%" text-anchor="middle" dominant-baseline="middle"
+                          stroke="#333333" stroke-width="10px" fill="none" id="portfolio-text">
+                        PORTFOLIO
+                    </text>
+                </svg>
+            </div>
         </div><!-- inner -->
     </section><!-- hero-section -->
 
@@ -206,7 +229,7 @@
                             <div class="contribution">
                                 <strong>Contribution</strong>
                                 <p>디자인 & 퍼블리싱 100%</p>
-                              
+
                             </div>
                             <div class="use-tool">
                                 <strong>Tool&Lang</strong>
@@ -219,7 +242,7 @@
                                     <img src="img/icon/html.svg" alt="">
                                 </div>
                             </div>
-                            
+
                         </div><!-- project-info -->
 
                     </div><!-- project-screen -->
@@ -269,7 +292,7 @@
                             <div class="contribution">
                                 <strong>Contribution</strong>
                                 <p>디자인 & 퍼블리싱 100%</p>
-                              
+
                             </div>
                             <div class="use-tool">
                                 <strong>Tool&Lang</strong>
@@ -282,7 +305,7 @@
                                     <img src="img/icon/html.svg" alt="">
                                 </div>
                             </div>
-                            
+
                         </div><!-- project-info -->
 
                     </div><!-- project-screen -->
@@ -332,7 +355,7 @@
                             <div class="contribution">
                                 <strong>Contribution</strong>
                                 <p>디자인 & 퍼블리싱 100%</p>
-                              
+
                             </div>
                             <div class="use-tool">
                                 <strong>Tool&Lang</strong>
@@ -345,7 +368,7 @@
                                     <img src="img/icon/html.svg" alt="">
                                 </div>
                             </div>
-                            
+
                         </div><!-- project-info -->
 
                     </div><!-- project-screen -->
@@ -395,7 +418,7 @@
                             <div class="contribution">
                                 <strong>Contribution</strong>
                                 <p>디자인 & 퍼블리싱 100%</p>
-                              
+
                             </div>
                             <div class="use-tool">
                                 <strong>Tool&Lang</strong>
@@ -408,7 +431,7 @@
                                     <img src="img/icon/html.svg" alt="">
                                 </div>
                             </div>
-                            
+
                         </div><!-- project-info -->
 
                     </div><!-- project-screen -->
@@ -445,7 +468,7 @@
                     </div>
                 </div><!-- video -->
                 <div class="video">
-                    <div class="video-info">    
+                    <div class="video-info">
                         <div class="video-position">
                             <div class="btn">MOTION GRAPICS</div>
                             <div class="btn">CHAR DESIGN</div>
@@ -516,40 +539,49 @@
                 <div class="image"><img src="img/joker.png" alt="">
                     <div class="info">
                         <h6>베트맨: 킬링조크 코믹스 표지</h6>
-                     
+
                         <p>코믹스의 컷 + 깨진 유리 표현 + 유리 내부 색감&비율 변경 + 타이틀 추가</p>
                     </div>
                 </div>
-                <div class="image"><div class="info">
-                    <h6>H&M 티저 이미지</h6>
-                 
-                    <p>모델 누끼 + 색감 보정 + 타이포그라피 + 질감 효과</p>
-                </div><img src="img/1990491369eb08e94b7145618a607acc.1000x1000x1.png" alt=""></div>
-               
-          
-               
-                <div class="image"><img src="img/오렌지.png" alt=""><div class="info">
-                    <h6>음료 제품 폼페이지</h6>
-                 
-                    <p>제품 사진 보정 + 배경 타이포그라피 추가 + 추가 요소 합성</p>
-                </div></div>
-                <div class="image"><img src="img/2424.png" alt=""><div class="info">
-                    <h6>쇼핑몰 썸네일</h6>
-                 
-                    <p>타이포그라피 + 제품 누끼</p>
-                </div></div>
-                <div class="image"><img src="img/32154125125.png" alt=""><div class="info">
-                    <h6>컨셉 페이지</h6>
-                 
-                    <p>로고 제작 + 캐릭터 패스 제작</p>
-                </div></div>
+                <div class="image">
+                    <div class="info">
+                        <h6>H&M 티저 이미지</h6>
+
+                        <p>모델 누끼 + 색감 보정 + 타이포그라피 + 질감 효과</p>
+                    </div><img src="img/1990491369eb08e94b7145618a607acc.1000x1000x1.png" alt="">
+                </div>
+
+
+
+                <div class="image"><img src="img/오렌지.png" alt="">
+                    <div class="info">
+                        <h6>음료 제품 폼페이지</h6>
+
+                        <p>제품 사진 보정 + 배경 타이포그라피 추가 + 추가 요소 합성</p>
+                    </div>
+                </div>
+                <div class="image"><img src="img/2424.png" alt="">
+                    <div class="info">
+                        <h6>쇼핑몰 썸네일</h6>
+
+                        <p>타이포그라피 + 제품 누끼</p>
+                    </div>
+                </div>
+                <div class="image"><img src="img/32154125125.png" alt="">
+                    <div class="info">
+                        <h6>컨셉 페이지</h6>
+
+                        <p>로고 제작 + 캐릭터 패스 제작</p>
+                    </div>
+                </div>
                 <div class="image"><img src="img/17mag-maneskin-superJumbo.png" alt="">
                     <div class="info">
                         <h6>모네스킨</h6>
-                     
+
                         <p>사진 색감 보정 + 타이포 추가</p>
-                    </div></div>
-        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="skill-section">
@@ -916,6 +948,7 @@
 
         <div class="page page-02">
             <div class="section-title">
+                
                 <div class="main">
                     <span>H</span>
                     <span>A</span>
@@ -944,11 +977,11 @@
                         <div class="item">
                             <p>경력</p>
                             <span>2015.06 - 2016.09</span>
-                            <span>더리터 슈퍼바이저</span><br/>
+                            <span>더리터 슈퍼바이저</span><br />
                             <span>2018.01 - 2020.10</span>
-                            <span>이디야 파고다점 운영</span><br/>
+                            <span>이디야 파고다점 운영</span><br />
                             <span>2022.05 - 2023.10</span>
-                            <span>은솔 인테리어 영업 & 시공</span><br/>
+                            <span>은솔 인테리어 영업 & 시공</span><br />
                             <span>2023 ~</span>
                             <span>유튜브 등 영상 편집 프리랜서</span>
                         </div>
@@ -1011,11 +1044,6 @@
 
             </div>
         </div>
-        </div>
-        </div>
-
-        </div>
-
     </section>
 
     <footer class="footer">
@@ -1056,12 +1084,73 @@
 
 
 <script>
+    const toggleBtn = document.querySelector('.header-mode');
 
-    // 사용법
-    document.querySelector('a').addEventListener('click', function (e) {
-        e.preventDefault();
-        smoothScroll(this.getAttribute('href'), 1000); // 1000ms 동안 스크롤
+
+    toggleBtn.addEventListener('click', () => {
+  const root = document.documentElement;
+  console.log('Button clicked!'); // 로그 출력
+
+  if (root.classList.contains('dark-mode')) {
+    root.classList.remove('dark-mode');
+    toggleBtn.classList.remove('dark-mode');
+  } else {
+    root.classList.add('dark-mode');
+    toggleBtn.classList.add('dark-mode');
+  }
+});
+
+
+
+
+    const media_qur = {
+        tablet : "(max-width: 430px)",
+        moba :"(min-width: 431px) and (max-width: 1024px)",
+        tablet : "(max-width: 1025px)",
+    }
+  
+
+    gsap.from(".human", {
+
+        scrollTrigger: {
+            trigger: ".hero-section",
+            start: "top top",
+            scrub:true,
+        }
+    })
+
+
+    const titles = document.querySelectorAll('.inner-title h2');
+
+    const textElement = document.querySelector('#portfolio-text');
+
+// GSAP animation for SVG text stroke
+gsap.timeline()
+    .to(textElement, {
+        strokeDashoffset: 0, // Reveal the stroke
+        opacity: 1, // Fade in the text
+        duration: 2, // Animation duration
+        ease: "power1.inOut",
+       
+    })
+    .to(textElement, {
+        fill: "#333333", // Fill the text after stroke animation
+        stroke: "none", // Remove stroke
+        duration: 1,
+        ease: "power1.inOut",
+    })
+
+    .to(textElement, {
+        fill: "currentColor", // Fill the text after stroke animation
+       
     });
+
+
+gsap.to('.menupath', {
+    attr: { startOffset: "25%" },
+    duration: 2,
+    ease: "power1.inOut", // 이징 함수
+})
 
     gsap.fromTo(
         ".box",
@@ -1087,8 +1176,8 @@
 
         scrollTrigger: {
             trigger: ".line-wrap",
-            start: "top 60%",
-            end: "bottom bottom",
+            start: "top 50%",
+            end: "bottom 80",
 
         }
     });
@@ -1165,53 +1254,66 @@
     });
     const projectAnimation = gsap.timeline();
 
-// 각 프로젝트 애니메이션 설정
-const projects = document.querySelectorAll(".project");
-projects.forEach((project, index) => {
-    // 프로젝트 요소 애니메이션 추가
-    projectAnimation.from(project, {
-        y: 400, // 아래에서 위로 이동
-        autoAlpha: 0, // 투명도 애니메이션
-        duration: 1, // 애니메이션 지속 시간
-        ease: "power2.out", // 부드러운 애니메이션
-    })
-
-
-    
-    // 각 프로젝트의 .contribution p 애니메이션 추가
-    const contributions = project.querySelectorAll(".contribution p"); // 복수 요소 선택
-    contributions.forEach((contribution) => {
-        projectAnimation.to(contribution, {
-            backgroundSize: "100% 100%", // 배경이 완전히 채워짐
-            duration: 1 , // 애니메이션 지속 시간
-            ease: "power1.inOut",
-            
+    // 각 프로젝트 애니메이션 설정
+    const projects = document.querySelectorAll(".project");
+    projects.forEach((project, index) => {
+        // 프로젝트 요소 애니메이션 추가
+        projectAnimation.from(project, {
+            y: 400, // 아래에서 위로 이동
+            autoAlpha: 0, // 투명도 애니메이션
+            duration: 1, // 애니메이션 지속 시간
+            ease: "power2.out", // 부드러운 애니메이션
         })
-        .addPause("+=0.5"); // 1초의 간격 추가
-    });
-});
 
-// ScrollTrigger 생성
-ScrollTrigger.create({
-    animation: projectAnimation,
-    trigger: ".project-section",
-    start: "top top", // 섹션이 뷰포트 상단에 닿으면 시작
-    end: "+=5000", // 전체 애니메이션 지속 길이
-    scrub: true, // 스크롤과 동기화
-    pin: true, // 섹션 고정
-    anticipatePin: 1, // 핀 동작 예측
-    markers: false, // 디버그 마커 숨김
-    stagger: 1, // 각 프로젝트 간 0.3초의 간격 추가
-});
+
+
+        // 각 프로젝트의 .contribution p 애니메이션 추가
+        const contributions = project.querySelectorAll(".contribution p"); // 복수 요소 선택
+        contributions.forEach((contribution) => {
+            projectAnimation.to(contribution, {
+                backgroundSize: "100% 100%", // 배경이 완전히 채워짐
+                duration: 1, // 애니메이션 지속 시간
+                ease: "power1.inOut",
+
+            })
+                .addPause("+=0.5"); // 1초의 간격 추가
+        });
+    });
+
+    // ScrollTrigger 생성
+    ScrollTrigger.create({
+        animation: projectAnimation,
+        trigger: ".project-section",
+        start: "top top", // 섹션이 뷰포트 상단에 닿으면 시작
+        end: "+=5000", // 전체 애니메이션 지속 길이
+        scrub: true, // 스크롤과 동기화
+        pin: true, // 섹션 고정
+        anticipatePin: 1, // 핀 동작 예측
+        markers: false, // 디버그 마커 숨김
+        stagger: 1, // 각 프로젝트 간 0.3초의 간격 추가
+    });
 
 
 
     const videoSection = document.querySelector('.video-section')
     const videos = videoSection.querySelectorAll('video')
+    const videoInfos = videoSection.querySelectorAll('.video-info')
 
     videos.forEach(e => {
         gsap.to(e, {
             y: "-30%",
+            scrollTrigger: {
+                trigger: e,
+                start: "top 30%",
+                end: "top top",
+                scrub: true,
+            }
+        })
+    });
+
+    videoInfos.forEach(e => {
+        gsap.to(e, {
+            x: "10%",
             scrollTrigger: {
                 trigger: e,
                 start: "top 50%",
@@ -1313,13 +1415,21 @@ ScrollTrigger.create({
 
     const aboutSection = document.querySelector(".about-section")
 
+    gsap.to(".human",{
+        left: "10%",
+        scrollTrigger: {
+            trigger: videoSection,
+            start: "top 80%",
+            end: "top top",
+            scrub: true,
+        },
 
+    })
 
     gsap.to(".human", {
         left: "50%",
-        x: "-50%",
         y: "0%",
-        zIndex: 10,
+
         scale: 0.7,
 
         scrollTrigger: {
@@ -1332,7 +1442,7 @@ ScrollTrigger.create({
     })
 
     gsap.to(".human", {
-
+        left:"50%",
         y: "100%",
 
         scrollTrigger: {
