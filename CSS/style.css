@@ -439,6 +439,12 @@ body {
     font-size: 5rem;
 }
 
+
+.hero-section .inner .ellipse text textPath:hover{
+    background-color: var(--black-color);
+    
+}
+
 .hero-section .inner .ellipse text textPath tspan {
     fill: var(--black-color);
 }
@@ -631,7 +637,7 @@ body {
     margin-top: 1rem;
     font-family: "pre";
     background-color: var(--white-color);
-    padding-right: 2rem;
+    padding: 2rem 4rem 4rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
