@@ -87,6 +87,10 @@ li {
     list-style: none;
 }
 
+body {
+    overflow: visible !important;
+  }
+
 :root {
     --black-color: #333333;
     --white-color: #F8F8F8;
@@ -800,6 +804,7 @@ body {
 
 .image-section .inner {
     position: relative;
+    overflow: hidden;
 }
 
 .image-section .inner .image-wrap {
@@ -866,7 +871,9 @@ body {
 
 .skill-section {
     height: 100vh;
+    overflow: hidden;
 }
+
 
 .skill-section .section-title {
     font-size: 20rem;
